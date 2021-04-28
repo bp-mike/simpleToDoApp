@@ -28,6 +28,7 @@ function pwdProtected(req, res, next){
     res.status(401).send("inncorrect username and(or) password")
   }
 }
+//user - todoapp pwd - injs
 app.use(pwdProtected)
 
 app.get('/', (req, res) => {
